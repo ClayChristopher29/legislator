@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- In your HTML, create an article tag that will serve as your main representative component. Give the element a unique identifier.
+In this component, create a sub-component for basic information using the section tag. In this section create elements for the representative's image, name, district info, and political affiliation.
+Beneath the basic information, you will create a sub-component, using a section tag, to list any committees the candidate is serving on.
+The last component will hold links to any legislation that your representative has enacted.
+Make sure you use good BEM-style class names for each element in your components. Put a comment above each component explaining what it is. -->
+
+<body>
+    <img class="Badpic" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEBIVFRUXFhUVFRUVFxUWFRUVFxUWFhUYFhUYHSggGRolHRUVIjEiJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGi0fIB8tLS0tKy0tLS0vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAIEBQYBBwj/xAA/EAACAQIDBQUGAwYGAgMAAAABAgADEQQhMQUSQVFhBnGBkaETIjKxwfBC0eEHI1JykvEUM2KCssLi4xVDov/EABkBAAMBAQEAAAAAAAAAAAAAAAABAwIEBf/EACgRAAICAgICAgIBBQEAAAAAAAABAhEDMRIhBEETMiJRcYGRsfDxYf/aAAwDAQACEQMRAD8A84tCoIwCGQTSMDCJKw6wFs5MoLGZYZRCKIlEIBAycCxwEcBHARiOARwitOgQEdAjgJwRwgB0COAiRb5DMnIDmZ6F2b7NpRAqVwGq62Nt2n/5deHrE2kajFsy+zOy+JrAME3FP4qnug9w1PlLyj2FH48R4Ko+Zb6TXGoTwPqbd9s19RIz4xAfedR/M1K//wCrGT5tlVjS2Zyp2FThXPioPyaQMT2IrL8Do3Q3U/Ues2AxycHX/ay/9FMIMRnl+p5829BFzY/jR5bjtn1aJtVQryJ0PcdDIhnrdXdcWdQynIggEX5Wz8szMntrsoLF8Keppn/ofofObU72Tlja0Y8xpEewjZQmOQQNcSTTEDiBEaRDAzhgIxRCwExpjDHmNMBAzGMIUwbQNAzGGEMYYADMGwhTBtAAcU7OwGRFEOog0EMRlMo2xijOTqKyJTEn0hGYYRRCATgEIBGZOARwEQEcBAQrRWjgJ20AGidE7aKAGk7E4EPVNVhcU7EDm508rE+Um9o+2y0WNLDgVKgyZjf2aHjmM2PQZd+gz+M2saGEWhSbdqVt6o7DVKV90eJ3Tbx6GY8YvLdpJf8A1GOONSdyNuTiqRd7Q2ria/8AnVmK8FB3U8FFhaV5ory9D9ZENSt/EB0GXpO/vhmfmROhNL0Qab9kg4dDwHkI+jWq0v8AJqOvRWNv6dD5SB/iD+Jb9xB+c4WU6MVPI3HzuI20wSaNbszt7Xpm2IAqrpvCyuB8j3EWm82VtqliUD0muOPMHSzDgfT5Txfe4Mc+uXkfziweNqYap7SixUjUcD0I4ic2TCn2i8Mr0z1DtXsreBr0xmP8wcwPxd449O6ZGbPsx2gTFU94WDiwqJra+QtzU8D4a2vm9uYIUaxVfhPvJ3Hh4G4koN/VmskfaA0hlAYoSVSGUjYuVJohrCGDWPMAOGNMcY0wAaYNo9o0wBAzGGPMYYhjDGNHmMMABxTsUBg6YhWE5TWPqCJGmcoiT6YkSgJOQRmGPUR4E4ojwIGTgEcBEBCUqRY2UEnkBc+QgA0CdtLPD7Crtqm4OdQhPQ5+ktcJ2coD/PxaD/TTVmP9TAW8plzivZtQk9IzG7DYbB1KhtTRnPJVLfKbXD0dmUswj1Tlm+Y8rgeklVe1iIN2lRyGguAvgqiYeeK9lF482YUdgcfiahNULRp3Au7AsVXJQFS/AaG2Zmv2T+zzC0gN/eqkcGO4n9K5+ZkKv2xxLsRTCKB8RAv3AX+8xzg12tin1qv3KbD8pl+R+i0fFs3WG2eiC1OmijkqgD0hTRPL0nnVTE1ybEvfqT8wYwVaozDuDwzNpP5f/Cy8V/s3mKwNN8nRGH+oCZ/anYjB1Qf3fszwNP3bf7fh85VU9r4xM/asRyazD1kvD9s3BtVo71srpdT5aRxyr+DMvGl/JjdudgcVRuaA9vT1svxgdUOf9N78hMlUuhKOpFsirAhl8DmJ7WO2mE/EtVT/ACg2gMXtvZmK92sN7l7Wnp3Ne4PdLxz/ALOaWB/o8j2RtBsLVWtTNxoR/Ep+JT3/ADE3vaOutUUKqG6spIPMe6fqYXFdg8BWucLiDTv+EneTyezcvxGCPZfF0KCU3UVAjuVeldhuNYi4tcZ73C3WNuMmmjNSUWmRKQykPGywRcpW4+UaIoirHXg1MdeIYjOGKNMAGmNJjjGmMQ0xhjjOGI0DMG0KRBtEAMxR0UAH0lirCEoiNqaxjY/DiTVEjYYSWoiMscBHgRoEeBAQXDUC7qi6sQB4m002+KY9nQ90aE/ifmzH5DTKU2wh++U8g58kaWNveb+Uf8b/AFnL5M2ujs8WCdtnTnqT491z6W85wjn4+AufoI58r9zfIRlVte5vmonHZ20cbr4+W830Eh4qpYG+uXcCRdu6wsJJxDfF3P8AT6CQ9oMBTqu2QAcC2pLKALdwMcVboUnSsHT2ph0UKrFzqxQMbk6+9p6zr9qVUi1IqOF929u4E2lNsbBDPfBGhscst0EH1kPEYZS5ZlZxw+mXHxnZxjZJSko2a3Cdsabn30ZepAI9Df0lz/jaTgMCCDxFrXnltMVKbAhTbiNL/prLbA7OqVgzJ7ovbMmzHl+sJQTHDLL9GrxnaKjTJX4jyUXPjwHiZS1O1VMf/U9v9l/RreszyG2ova4tob8frA4qwUEEg53y05W6axqC0ZlmlVo0dPbVCpfeVlvxIvbrdb2jKSoxYAgjoeHSUWy6eYBOuo5GS12VUtv0zbNtzMjLesM+WUXFIOcpIusPVKPuMf5W5j85d4PH1FzWoy9xMxhxjrZMUN03G5VysDw3rcPzml2fVJAvkdCORGXjwkMka7RqEr6ZdV8a1T/NVXPMizf1ix9ZW4vZlKp8JZDy+Je6xz9ZIU/fTW3zEfYff3yt6xRzTXsJYYP0ZnGbNqUviF14Mua/oe+RZst7gRdTkQcx4yg2vs72RBX4G0/0nlf5fpOzDm59PZxZsPDtaKyNMJacIlznBGMaGIg3EBgGaNLxVBAMYAELRhaCLRpaBoLvRQG/FCgLSmII6ww0gRACVhxJSwFEZQ6xGR4jxGiOEYEvZVTdqoeu7/UCv1lxU+Ox4gfVT9JnRL56m+i1OXxdNA/lYN4Tj8qOmdniS3ERa+vHXxG78xBs3Px8Rut5GOc/W/8A28jYxrD8j1NvqPlOM7hpPPXj3gbrDxGYnUw4eyGxFhl6q3lfyjT39b/I+GhncNV3XAtqbd187fUTcHTMSVodtjZLkhqK390Ky3AJAHukXyvqDnpblKOsHXJqTg/yk/pN7hTcm8K+DTXdE6UrFFejzalsutWPup4ubAd/GbjBbGajSWmudhrzOpJ8bmS93cYnc3hbLkG4XgKWMrmgWqU1FQb1lUnda3wkHheNM2o12jE7W2HUV3dBvKSSQCN5WOuR4HXxldcjJ0bxWbvDVmqKrvR9nVv7wBLLbqxA8pZHCq4zA7o7M/GjzvC4FqlhTpsL5bxXdC9c9bchNcMIqoqAWCgKO4ZSxXDqh90AQGJMUkNJRMv2i2XvrYZg8OoP6esj7Idgihr3A462ANvpNKrgizDU+7zJ6SoxjLvC2XxDwFrn5zE3+FE4w/JsnUauV/H1B+sMH/LwF1PpK6jUvkOPDvsfkLySbnhxPzkoYZT0gyZoQ2yQ1Tn4/IyHidpIUKFd+4I5AG2TX5g5+fOOqYdjrGf4LpO7H4vHtnBk8vl0kUu6Y0oZef4LpOHBdJ08Dm5lEUMYyGXxwXSDbA9IcA5lA9IyPUomaU4DpBts/pDgHMy7UTGGiZpW2ceUG2zjyhwH8hnPYmdl/wD/AB55TsOAfIQiMo1Uj3MZTaYZsmUxDKJHQwyNGZDqkKtOBRoT2loAFFKWGzX3bodG9DKg4wCdXaAilBSVM1CTi7Rcld07p71Pd+Wndac/tbuzt3jUQeGxi1huk++MwefX71E6G4HJhbLnyz+Rnkzg4OmetCanG0NqH87/AF7jx5TmFexz6eHfzHIzjH592fTkenGBJt3dOB8dO45RR6ZpmxpJawOvGSFF9ZR7G2q9RwjgZL8QyJIsMxwNpd4g2Unj/f8AOdS0YT7A4zEpTG87Ko5k/IcZWN2kwxz9sthrz6Ss7Q9nmr3YVGLH+Igbv8uWki4bZuJUKtkG7exJVsyM+A8s5RI644ouKe/6pV/csqG3qDsAr8dGFry+Q5AzH4fstxquWb/TlpppkJp9mU92yXYgC43jc8rX46xSJ5FFfX/f8HMSc5DxOthJtWV2MrhAXbRQT5TJGTO42idxQguQwJ6Wzy6zFtttHxop7o9mavsybnPW3hvm8s9rds6PsCtJW9qwtnkEuCDc6HXhyGkwNMkAPx3g48DlK48Xds5s2brjFnsK4cKLKthH0qI5SxFHKBcAGdlUec3YL2I5RexHKFDiODCFioB7Acpz2A5STvCLeEAoi+wHKNOHEl7wnCwjsKIZoDlGGgOUmlhGFhCxUQjQHKDbDjlJxYQbuIWFEI0ByihDUihYUYjECCpLnD142gM5JlVokokKqTlOHWAhgSDr5CSwJFxmkQFHjcSRIIx55wm0TnK+0yVRa4baJBBBIIzE1OC20lUAVTuvwfgfy+UwYkijiCJOeNTXZuE3DR6C5IzOa/xLnl998EXvmD9/ffM1s/H1L2Rm7hp4iTq+0WAz3SedhfztIrxJPRZ+XFbRc4LFezqK9tDw5HI/eU2lWpvqN03BAIPOeQNtJw194npwPhwm07N7WLAKMwc16Hisp8DgthDyFKWjXGjfWcGFWAp7QBGesdTxgi6OuNj2pgaSOLjPlf78xH1MWshtiiTMugp2Er1LASl7QMRh6h5qR4f2liBvG50HDmZE29T3qTjkDc+BjhtEsr/FnlmLQMd0ZHjBYprMAOGkm11G/fiMr85DxpG9lwE6jzz6ApZqDzAPpK3FHOTcMf3SfyL/AMRIFbNpejnboYDO70cFE7uiOjNjd6cLRxWNKwoOQwvGmpHFYNkjoXIRqxhqxFYNhHxFyE1WCerOsIJxDiHIcDORyrFM0a5GPqax9BI1pKorlItFbEsMhjCscsQBhIePbKS1Mr9oNAEZzHnORQIfFnOBEwWQrSbgMDv+8x3V58T0H5y47M9l2xH7yodyiNW4v0UfWN7TYYUKu6l/ZkXp9BxXvH1lI43XJ6HOMuNouNp18KcOgwyBCoztq3PePE/UTIV8STCbMxaLVX2wLU7+8AbHwP3pFt7CCnU934GG+hve6NmM+fA9QZuU7XRCMKfZBNSafsFiv3xQjLdLjoVIv5gzN4TCtUYIguT95ngJ6bsTYqYXDvu2aoV99/oOSiQm+i0V2XGPw341469esgjeHCXODO9SQ63RT6CcrURa85melCRUVWuIREyy/WGemLRYVM/vKKirDU0sPvWR8RR3lZeYI9LH5ySxPCIrNIhLVHkLFg7K67ri4a/MW1FpW1z+8P3wnrm1djUcQPfFm4OMmH5joZ5f2k2a+GrFSd7JWDAWupyvbhmCNZ0qVnBKDiek9pe1gwVKgi0xUdqasQWsFUKAL2BNyb27jFsLb9LFpvJ7rDJkJG8OvUdZ5NbeFwbnjzgqVRqbXUlTqCDYg8wZTm0yLxpo92Vo8GZzZnazC1SqiqFcgZMCo3uQY5E3l+DLdM5+1sIYwzt5wxgNMGxj2gmMBDWMG0cxg2MYhrGCaPYwZ1jAOoij1GUUwbMWZMpCQxrJtORKMLaNKxwjrQaGmDvK/aibqbzsqg/CGYKzdVU5kS02gwo02KlGq290Nminrz+UoMRtZiDvsGawvdQ2+et9B+lhNcKX5CUrfQHZexKmJa491B8TnTrYcTNPszYNAm7r+6pmwU/FVfIkueQy87ZAZ02C7QYhUVDuDdBAsvvW6nhll4Sxp7ZDLZ0IPNCLHvU/nNY1BbFk+R6LzE7SLe6lgBkAMgO4Sp2xglq0mUn3tVJ4N+XCVeL2zuaC44EZHxX8iZX4nbLOOXSVeSNUz0/CzR+J48n/AEpHJBIOoyI6ywwlKpVUU3+FTvI3FSfiHVTr3jvgL7zXOsNjVYKGDZDUcc9DOOzllV9GkwYp0FyKrzJ1J6yVV7cUaNPcWm1Q7pAv7q9SeJ8pgqeJBGd+s0fYbY6V65eoN5EzAb8TcARxA17yInVCinZ6fsVicPRJFiaVMkciVBt6yTU0nb28oKo1uM52d8CFY3PfJFNBaMtcx9XgLzKOhu0dQcYmM7vWylZtfalPDpv1msL2FgSSc8gBmdDKxRzTZE29jzRo1HGoU7t/4jkvqZ5ZiMXUqPv1XZ+F2OY6W4DoJedpe1X+IHs6Slad8y1t5rHLL8ImfcDdI++crFHJklbOYukMmXI9NYSiwbUXPdeRlVja18tMxD77jIj1miVBqNMF1QBRvMFJbJRfL3iBkM/Seu7Pw7U6SIzbxVVUtzsLXnj+HpkjP+LKbPsxSxtUmnhWOQG8XIFNAche4OZsbAC+srDolNX0ja3iJkZNi7Up5utDEDiKbFKnhvqFPpJDU3ABem6X4OLHu5HwJmlJMnKEo7Q0wbRxMYTNGRjQTGEaCaMQxjBjWOYxtL4owRZU1ynIRNIpMqYKic5NSQcPJqdJM0woM7UxNJLpVazOpVSL3pk2IqMBwFrEcQTK/H7UWmCEIL8W1VO7m0oEdqpub2OZt8T+PAdfKPXXsEvYTaeJqITTcEsMgdQRwN+OVs+OsjYbDP8AGeYF+V9LdZerss2RqqhVK+4o03Qbd58YLaWLQAIuZuDYdIOLfbNKS0iOiBRn+sjV8eT7qfoO8yNUxBc53A8v7xC2gFhMOSWjdXsawJNyb/n9JY7M2NXxBtQpO/UD3R3toJu+wnYZGUYjGLe+dOkchbgzjjfgPOb/ABmLp0KTFVCqik2AAACi+QEnZVQPCNqbLbC1DSqlTUAFwp3gpIvYnna3nK5yXZ+A58gBC47GNVqvUc5uzOe8m5iQDdOuucqkRbIYAK2sbc+fW01/7Pae67HeFxw0NjxtMozZ2tl1Endm3NPEKwOQBt4i1iPH0mJLorjf5HsiEkRzU7i0hbMxe+NP0lj6SLR2x6AU8PbWO3BmTHsf7fWBq1IkjdgywnmHbTbD16jUdxQlKobG53iRdbk6c8pZdsO1puaGGfMZPVX/AIp9W8ucxRqXuSSTmSSSSfEysUcmbJfSOv8AD1uIxTc5jKML3AhqYtp5mbOeh+fIwajevbhx52nd7Ucf0EJhE1EYg+FFlE9h7BYQUsKmXvP+8bqW+HyXd8SZ5BhUJso1JsPE2nuWzKe5TVeSgekJulRvDG3ZeU69oapUVhYgEHUHMHzlej5RxfKSOhop9tbMCe/T+Hiv8Pd0lKTNe73BBmTx1Lccrw1HcdJ0Yp30zhz4uPaAsYJo5jBMZc5hjTuH+KNcx2D1gwRZxThM5JlTCYPMepJ0A5kyFtPbAAK0zYaFvxN0HISvx20bjcUWUaLz6ueJ6SD7G53nOUi5V0iyh7ZLwuDesbnJeAmjWvRw6+4AWyJY6A9AfiPU+UqMFtDeG4o94cuIllR2YGIatmeC8B385tUl0dGWGPgmmRg9bEm63C8Xbjztzna2zggst89SdT3nl0l6vIRr0wYn3s5FKtGQq4UiW3Y/Zor4ulTcXUHfYc1T3reNgPGS6+Emh/ZzgbV6lS3woFHe5/8AGSaotB2z0CpVmY7cYncwdY5+8An9TBT6EzQ1Jjf2n1d3DIv8VQeSqT8ysUdl5dRPK62nf8vv5Q1OnfIltTkDbjE1O5A4AZ+GsctjfKVOUC1hcL+c4tQqwbMZ3y11jqi2ysBbleNscu776zLNI9V7O49alNWXQjy5jvmgU98897F1gqWF82JPy+QE31KoLDPT70k2jui7SYWoc75aSi7VMRhKxTJtw24WuRf0vM9t/t0d/cwgWwOdUi+9bXcXS3U68uMyu2ttVsS16rGwtZBkgI42vr1jUTEsyqkVpTLr00jGMK07TymzlGUKYP3aEamBH1ANdD0jLknPSMyEpUuM7TyaPpGcqLYzRkt+zeE9piaSf6w3gvvfSezImU81/ZxhN+uanBE9WOXoDPThJzZ0YV0OpidvO3nDJlxMJndvLZlPMEeX95oiZRdoF9y/Ij1y/KUxupIhnV42UpMGxjS8YzTsPNE5h8BrIrNJWzomNE1jnOwbNnFMmjyCmoGsca2eeY9PKKKch2k7AYlV+EWlzh8beKKaiyckTadYGFvOxShFjWmy7FUQKDNxZzfuUAD5mKKYnoth+xfGeb/tPxF61FL5Khf+pv8A1+sUUxHZbJ9TFNp3/Yg1axv4flFFKnOhMSeB8xB2vFFEzSEjsNGIztqQOt7TS7L7Z1KSCmaauqqqgkkNkLXJz8p2KZNptaMuwGU4wziijMiRQeMM+UUUa0JgnW5HjDJTtFFGhNnSI4G4txEUUAPQP2T1AfbLx90/P8jPQ6giik5bOiH1BidEUUwVOXlVtoXpt3E+Wf0iijjtGZ/VmS34t6KKd55Ax2lhs7SciiZqIV3ziiimTR//2Q=="alt="">
+<h1 class="Title">Carol Miller</h1>
+
+<h2 class="Title-sub">Republican, 3rd District, West Virginia</h2>
+<article class="Bio">
+    <p class="bio-component">Carol Miller is a small business owner, bison farmer, and State Delegate who is running for Congress to bring West Virginia values to Washington DC. Carol is pro-life, pro-Second Amendment, and pro-coal. Carol will work with President Trump to build the wall and end illegal immigration. In the State House, Carol prayed before every vote and she’ll do the same in Congress.
+
+            EDUCATION: BA, Columbia College
+            
+            CURRENT OFFICE OR OCCUPATION: Small Business Owner, Bison Farmer, and State Delegate.
+            
+            ENDORSEMENTS: Susan B. Anthony List (National Pro-life Group), Winning for Women.
+            
+            FAMILY: Husband of 45 years, Matt Miller; sons and daughters-in-law, Chris and Cassie Miller and Sam and Katie Miller; five grandchildren.</p>
+</article>
+
+<section class="Committees">
+
+    <h2>Committee Seats</h2>
+
+    <ul class="Committess-list">
+        <li>Agriculture and Natural resource</li>
+        <li>Finance</li>
+        <li>Rules</li>
+        <li>Small Business, Entreprenureship, and Economic Development</li>
+    </ul>
+</section>
+<article class="legislation">
+    <h2>Sponsored Legislation</h2>
+    <ol class="legislation-list">
+        <li>
+            <a href="https://www.billtrack50.com/BillDetail/1014007">Requiring county school boards to provide adequate mental health and counseling services</a>
+        </li>
+        <li>
+            <a href="https://www.billtrack50.com/BillDetail/1013999">Making it a misdemeanor for a person to knowingly allow a felony drug offense to be committed on his or her property</a>
+        </li>
+
+    </ol>
+</article>
+
+    
+</body>
+</html>
